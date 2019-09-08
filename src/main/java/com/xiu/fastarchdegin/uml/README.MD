@@ -15,12 +15,12 @@
 
 其中关联又分为聚合(Aggregation),组合(Composition)
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/uml.png)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/uml.png)
 
 ## 1.基本概念
 
 类图的3个基本组件:类名,属性,方法
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/class.png)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/class.png)
 
 ### 1.1 泛化
 
@@ -32,14 +32,14 @@
 ### 1.2实现
 
 类图中是接口和实现之间的关系.类图中使用带三角箭头的虚线表示,箭头从实现类指向接口.
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/realization.jpg)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/realization.jpg)
 
 ### 1.3依赖
 
 依赖是对象间最弱的一种关联方式,是临时性的关联.代码中一般指由局部变量,函数参数,返回值建立的对于其他对象的调用关系
 .一个类调用被依赖类中的某些方法而得以完成这个类的一些职责.在类图使用带箭头的虚线表示,箭头从使用类指向被依赖类.
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/dependency.jpg)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/dependency.jpg)
 
 ### 1.4关联
 
@@ -49,7 +49,7 @@
 组合关联.类图使用带箭头的实线表示,箭头从使用类指向被关联类.
 
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/association.jpg)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/association.jpg)
 
 ### 1.5 聚合
 
@@ -57,20 +57,20 @@
 类图上使用空心菱形表示,菱形从局部指向整体
 
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/aggregation.jpg)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/aggregation.jpg)
 
 ### 1.6 组合
 
 表示contain-a关系,一种强包含关系.部分不能脱离整体存在.在类图使用实心的菱形表示,菱形从局部指向整体.
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/composition.jpg)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/composition.jpg)
 
 ### 1.7多重性
 
 通常在关联,聚合,组合中使用.代表有多少个关联对象存在.如下图,一个割接通知可以关联
 0到N个故障单.
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/multiplicity.jpg)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/multiplicity.jpg)
 
 ### 聚合和组合的区别
 

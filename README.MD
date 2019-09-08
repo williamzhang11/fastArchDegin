@@ -8,3 +8,4 @@
 |[linux五种IO模型](src/main/java/com/xiu/fastarchdegin/fiveiomodle/README.MD)|
 |[java三种IO模型](src/main/java/com/xiu/fastarchdegin/javaiomodle/README.MD)|
 |[redis线程模型以及为什么这么快](src/main/java/com/xiu/fastarchdegin/redisthreadmodle/README.MD)|
+|[nginx线程模型](src/main/java/com/xiu/fastarchdegin/nginxthread/README.MD)|

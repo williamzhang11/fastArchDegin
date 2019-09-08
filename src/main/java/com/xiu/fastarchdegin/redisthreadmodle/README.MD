@@ -7,7 +7,7 @@
 redis内部使用文件事件处理器 file event handler 这个文件事件处理器是单线程的,所有叫
 单线程模型.采用IO多路复用机制同时监听多个socket,根据socket上的事件选择对应的事件处理器处理.
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/redisthread.png)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/redisthread.png)
 
 
 多个socket可能会并发产生不同的操作,每个操作对应不同文件事件,但IO多路复用程序会监听多个socket,

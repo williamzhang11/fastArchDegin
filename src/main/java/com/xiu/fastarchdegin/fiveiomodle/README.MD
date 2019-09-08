@@ -1,11 +1,11 @@
 # linux 5种IO模型
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/iodiff.JPG)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/iodiff.JPG)
 
 
 ## 1.阻塞iO(Blocking io)
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/blockingio.JPG)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/blockingio.JPG)
 
 默认情况下socket是blocking.
 
@@ -20,7 +20,7 @@ blocking IO的特点就是在IO执行的两个阶段都被block了
 
 非阻塞IO流程是这样的
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/noblockingio.JPG)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/noblockingio.JPG)
 
 当用户进程发出read操作时,如果kernel中的数据没准备好,它不会block用户进程,而是立刻返回一个error.
 用户进程判断结果是一个error时,就知道数据还没准备好,它可以再次发送read操作.一旦kernel中的数据
@@ -33,7 +33,7 @@ blocking IO的特点就是在IO执行的两个阶段都被block了
 有时候也称事件驱动IO,
 
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/iomultiplexing.JPG)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/iomultiplexing.JPG)
 
 用户进程调用了select,整个进程会被block,kernel会监视所有select负责的socket,当任何一个socket中
 的数据准备好,select会返回.
@@ -45,12 +45,12 @@ select/epoll的优势并不是对于单个连接能处理得更快，而是在�
 
 ## 4.信号驱动式I/O
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/sinio.JPG)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/sinio.JPG)
 
 ## 5.异步IO
 
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/ayncio.JPG)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/ayncio.JPG)
 
 用户进程发起read操作后,立刻可以开始做其他事.另一方面,从kernel角度,当它受到一个异步读后,首先会立刻返回,不会对
 用户进程产生任何block,然后kernel等数据准备完成,然后将数据拷贝到用户内存,当这一切都 完成之后，

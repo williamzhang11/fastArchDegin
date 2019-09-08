@@ -5,7 +5,7 @@
 
 多线程并发模型是目前最普遍的服务端编程模型,该模型的架构如下图:
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/multhreadmodle.jpg)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/multhreadmodle.jpg)
 
 该模型针对每一个请求,会为其创建并分配一个线程.该线程负责这个请求的处理.
 

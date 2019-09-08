@@ -2,7 +2,7 @@
 
 很多系统也使用事件驱动模型,模型图如下:
 
-![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/kafka/image/eventmodel.JPG)
+![image](https://github.com/williamzhang11/fastArchDegin/blob/master/src/main/java/com/xiu/fastarchdegin/image/eventmodel.JPG)
 
 思想: 将处理流程分割为多个步骤,每个步骤都实现为一个有限状态机(FSM),所有的处理请求都会作为事件进入系统,
 由调度器负责传递给相应的状态机,状态机的处理结果也以事件的形式传给调度器,新的实践将再次被调度器转发给下一个
