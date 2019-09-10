@@ -10,3 +10,5 @@
 |[redis线程模型以及为什么这么快](src/main/java/com/xiu/fastarchdegin/redisthreadmodle)|
 |[nginx线程模型](src/main/java/com/xiu/fastarchdegin/nginxthread)|
 |[单例模式](src/main/java/com/xiu/fastarchdegin/singleton)|
+|[工厂模式](src/main/java/com/xiu/fastarchdegin/factory)|
+|[代理模式](src/main/java/com/xiu/fastarchdegin/proxy)|

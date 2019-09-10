@@ -5,7 +5,7 @@ import java.net.Socket;
 import java.util.Date;
 
 //客户端
-public class IOClient {
+/*public class IOClient {
 
 	public static void main(String[] args) {
 		
@@ -24,4 +24,4 @@ public class IOClient {
 		    }).start();
 	}
 	
-}
+}*/
